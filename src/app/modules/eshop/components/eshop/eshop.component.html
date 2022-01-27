@@ -1,0 +1,7 @@
+<div class="container cont">
+    <div class="row row-cols-4 g-2">
+        <ng-container *ngFor="let item of products">
+            <product [product]="item" (venta)="compraPadre($event)"></product>
+        </ng-container>
+    </div>
+</div>

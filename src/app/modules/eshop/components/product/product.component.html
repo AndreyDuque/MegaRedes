@@ -1,0 +1,11 @@
+<div class="card" *ngIf="product.title === 'Cuchara'">
+    <img class="card-img-top" src="assets/img/facebook.png" alt="">
+    <div class="card-body">
+        <h4 class="card-title">{{product.title}}</h4>
+        <p class="card-text">{{product.description}}</p>
+        <p class="card-text">{{product.price}}</p>
+    </div>
+    <div class="card-footer">
+        <a [name]="product.title" [id]="product.title" class="btn btn-primary" (click)="compraHijo($event)" role="button">Comprar</a>
+    </div>
+</div>
