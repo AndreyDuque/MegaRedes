@@ -1,3 +1,11 @@
+
+<div class="container cont">
+    <getProductId (productFiltered)="productFilter($event)"></getProductId>
+    <addProduct></addProduct>
+    <updateProduct></updateProduct>
+    <button type="button" class="btn btn-outline-primary" (click)="clear()">Limpiar busqueda</button>
+</div>
+
 <div class="container cont">
     <div class="row row-cols-4 g-2">
         <ng-container *ngFor="let item of products">
